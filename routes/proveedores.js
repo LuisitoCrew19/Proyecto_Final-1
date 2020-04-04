@@ -1,9 +1,7 @@
 const express = require('express');
 const router = express.Router();
-var bodyParser = require('body-parser');
-const Post = require('../models/eventos');
+const Post = require('../models/Proveedores');
 
-var urlencodedParer=bodyParser.urlencoded({ extended: true });
 //get back all posts
 router.get('/', async (req,res) =>{
     try{
@@ -15,11 +13,18 @@ router.get('/', async (req,res) =>{
 
 });
   //submit posts
-   router.post('/', urlencodedParer ,async (req,res) => {
+   router.post('/', async (req,res) => {
      const post = new Post({
-        Codigo_Evento: req.body.Codigo_Evento,
-        Descripcion_Evento: req.body.Descripcion_Evento
-       
+        Codigo_Proveedor: req.body.Codigo_Proveedor,
+        Cedula : req.body.Cedula,
+        Nombre_Proveedor: req.body.Nombre_Proveedor,
+        Correo_Electronico: req.body.Correo_Electronico,
+        Contacto: req.body.Contacto,
+        Telefono_Contacto:req.body.Telefono_Contacto,
+        Direccion:req.body.Direccion
+
+
+        
      });
      try{
      const savedPost = await post.save();
@@ -27,7 +32,6 @@ router.get('/', async (req,res) =>{
      }catch{
          res.json({message: err});
      }
-     res.render('/eventos', {data: req.body})
    });
 
    //Specific post
@@ -58,7 +62,7 @@ router.get('/', async (req,res) =>{
        try{
         const updatedPost = await Post.updateOne(
             {_id: req.params.postId}, 
-            {$set: {Codigo_Evento:req.body.Codigo_Evento}}
+            {$set: {Codigo_Proveedor:req.body.Codigo_Proveedor}}
             
             );
 
@@ -67,8 +71,7 @@ router.get('/', async (req,res) =>{
     } catch (err) {
         res.json({message: err});
        }
-       res.redirect('/eventos');
-   });
+   })
 
 
   module.exports = router;
