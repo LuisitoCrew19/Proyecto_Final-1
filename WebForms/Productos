@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Producto</title>
+    <script src="Scripts/jquery-3.4.1.js"></script>
+    <script src="Scripts/popper.min.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <style>
+        .colunm{
+            column-count:2;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Tramesquirn S.A</h3>
+            </div>
+            <fieldset>
+
+                <h3>Informacion de Productos</h3>
+
+                <div>
+                    <h4>Maestro:</h4>
+                    <div>
+
+                        <label class="" for="codBox" id="lblcod">Codigo Producto</label>
+
+
+                        <div>
+                            <input id="codBox" name="codBox" type="text" />
+                            <button id="btnBuscar">Buscar</button>
+                        </div>
+
+                    </div>
+                    <div>
+                        <label class="" for="descBox" id="lbldesc">Descripcion</label>
+
+
+                        <div>
+                            <input id="descBox" name="descBox" type="text" style="height:50px" />
+                        </div>
+
+                    </div>
+                    <div>
+                        <label class="" for="puntoBox" id="lblpunto">Punto de Re-Orden</label>
+
+
+                        <div>
+                            <input id="puntoBox" name="puntoBox" type="text" />
+                        </div>
+
+                    </div>
+                    <div>
+                        <label class="" for="unidadBox" id="lblunidad">Unidad de Medida</label>
+
+
+                        <div>
+                            <input id="unidadBox" name="unidadBox" type="text" />
+                        </div>
+
+                    </div>
+                </div>
+                <div>
+                    <br>
+                    <br>
+                    <h4>Detalle</h4>
+
+                    <div>
+                        <label class="" for="codprodBox" id="lblcodProd">Descripcion</label>
+
+
+                        <div>
+                            <input id="codprodBox" name="codprodBox" type="text" style="height:50px" />
+                        </div>
+
+                    </div>
+                    <div>
+                        <label class="" for="codmatBox" id="lblcodmat">Codigo Materia Prima</label>
+
+
+                        <div>
+                            <input id="codmatBox" name="codmatBox" type="text"  />
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+
+
+
+
+
+                <div>
+
+                    <br>
+                    <br>
+                    <button id="btnEliminar">Eliminar</button>
+                    <br>
+                    <br>
+                    <button id="btnCrear">Crear</button>
+
+
+
+
+                </div>
+
+
+            </fieldset>
+            <br>
+            <button id="btnSalida" onclick="location.href='Login.html'">Salir</button>
+
+    </div>
+</body>
+</html>

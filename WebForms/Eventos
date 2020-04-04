@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Eventos</title>
+</head>
+<body>
+
+    <div class="wrapper">
+
+
+        <div class="sidebar-header">
+            <h3>Tramesquirn S.A</h3>
+
+        </div>
+        <fieldset>
+
+            <h3></h3>
+            <div>
+                <label class="" for="codevBox" id="codev">Codigo Evento</label>
+                
+                <div>
+                    <input id="codevBox" name="codevBox" type="text" />
+                    <button id="btnBuscar">Buscar</button>
+
+                </div>
+            </div>
+            <div>
+                <label class="" for="desevBox" id="desev">Descripcion Evento</label>
+
+
+                <div>
+                    <input id="desevBox" name="desevBox" type="text" />
+                </div>
+
+            </div>
+            
+
+            <div>
+
+                <br>
+                <br>
+                <button id="btnEliminar">Eliminar</button>
+                <br>
+                <br>
+                <button id="btnCrear">Crear</button>
+
+
+
+
+            </div>
+
+
+        </fieldset>
+        <button id="btnSalida" onclick="location.href='Login.html'">Salir</button>
+    </div>
+
+
+
+</body>
+</html>

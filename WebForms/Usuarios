@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Usuarios</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+        function Find() {
+            var MongoClient = require('mongodb').MongoClient;
+            var url = "mongodb:// cluster0-shard-00-02-p2ur1.mongodb.net:27017/";
+
+            MongoClient.connect(url, function(err, db) {
+             if (err) throw err;
+             var dbo = db.db("Proyecto_Final");
+             //Find the first document in the customers collection:
+             dbo.collection("Usuarios").findOne({}, function(err, result) {
+             if (err) throw err;
+             console.log(result.name);
+             db.close();
+             });
+            });
+
+                    
+        }
+
+    </script>
+</head >
+                <body>
+
+                    <div class="wrapper">
+
+
+                        <div class="sidebar-header">
+                            <h3>Tramesquirn S.A</h3>
+
+                        </div>
+                        <fieldset>
+
+                            <h3></h3>
+                            <div>
+                                <label class="" for="emailBox" id="email">Email</label>
+
+
+                                <div>
+                                    <input id="emailBox" name="emailBox" type="text" />
+                                </div>
+                            </div>
+                            <div>
+                                <label class="" for="userBox" id="user">User</label>
+
+
+                                <div>
+                                    <input id="userBox" name="userBox" type="text" />
+                                </div>
+
+                            </div>
+                            <div>
+                                <label class="" for="nombreBox" id="lblnombre">Nombre</label>
+
+
+                                <div>
+                                    <input id="nombreBox" name="nombreBox" type="text" />
+                                </div>
+
+                            </div>
+                            <div>
+                                <label class="" for="rolBox" id="rol">Roles</label>
+
+
+                                <div>
+                                    <input id="rolBox" name="rolBox" type="text" />
+                                </div>
+
+                            </div>
+                            <div>
+                                <label class="" for="passwordBox" id="password">Contraseña</label>
+
+
+                                <div>
+                                    <input id="passwordBox" name="passwordBox" type="text" />
+                                </div>
+
+                            </div>
+
+                            <div>
+                                <label class="" for="estadoBox" id="estado">Estado</label>
+
+
+                                <div>
+                                    <input id="estadoBox" name="estadoBox" type="text" />
+                                </div>
+
+                            </div>
+
+                            <input type="button" value="Aceptar" id="Aceptar" onclick="return Find();" />
+
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="btnBorrar"></label>
+                                <div class="col-md-4">
+                                    <button id="btnBorrar" name="btnBorrar" class="btn btn-warning">Borrar</button>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="btnCrear"></label>
+                                <div class="col-md-4">
+                                    <button id="btnCrear" name="btnCrear" class="btn btn-success">Crear</button>
+                                </div>
+                            </div>
+
+
+                        </fieldset>
+                        <button id="btnSalida" onclick="location.href='Login.html'">Salir</button>
+                    </div>
+
+                    
+
+
+
+</body>
+</html>

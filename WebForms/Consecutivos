@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Consecutivos</title>
+</head>
+<body>
+    <div class="wrapper">
+
+
+        <div class="sidebar-header">
+            <h3>Tramesquirn S.A</h3>
+
+        </div>
+        <fieldset>
+
+            <h3></h3>
+            <div>
+                <label class="" for="tipconBox" id="tipcon">Tipo Consecutivo</label>
+
+
+                <div>
+                    <input id="tipconBox" name="tipconBox" type="text" />
+                    <button id="btnAceptar">Buscar</button>
+                </div>
+            </div>
+            <div>
+                <label class="" for="descBox" id="desc">Descripcion</label>
+
+
+                <div>
+                    <input id="descBox" name="descBox" type="text" />
+                </div>
+
+            </div>
+            <div>
+                <label class="" for="valorconBox" id="valorcon">Valor Consecutivo</label>
+
+
+                <div>
+                    <input id="valorconBox" name="valorconBox" type="text" />
+                </div>
+
+            </div>
+            <div>
+                <label class="" for="preBox" id="pre">Prefijo</label>
+
+
+                <div>
+                    <input id="preBox" name="preBox" type="text" />
+                </div>
+
+            </div>
+            
+            <div>
+
+                <br>
+                <br>
+                <button id="btnEliminar">Eliminar</button>
+                <br>
+                <br>
+                <button id="btnCrear">Crear</button>
+
+
+
+
+            </div>
+
+
+
+        </fieldset>
+        <button id="btnSalida" onclick="location.href='Login.html'">Salir</button>
+    </div>
+
+
+</body>
+</html>

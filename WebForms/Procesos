@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Producto</title>
+    <script src="Scripts/jquery-3.4.1.js"></script>
+    <script src="Scripts/popper.min.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <style>
+        .colunm{
+            column-count:2;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Tramesquirn S.A</h3>
+            </div>
+            <fieldset>
+
+                <h3>Informacion de Procesos</h3>
+
+                <div>
+                    <h4>Maestro:</h4>
+                    <div>
+
+                        <label class="" for="ordenBox" id="lblorden">Orden de Pedido</label>
+
+
+                        <div>
+                            <input id="ordenBox" name="ordenBox" type="text" />
+                            <button id="btnBuscar">Buscar</button>
+                        </div>
+
+                    </div>
+                    <div>
+                        <label class="" for="dateBox" id="lblfecha">Fecha</label>
+
+
+                        <div>
+                            <input id="dateBox" name="dateBox" type="date" style="height:50px" />
+                        </div>
+
+                    </div>
+                    <div>
+                        <label class="" for="proveedorBox" id="lblprovedor">Proveedor</label>
+
+
+                        <div>
+                            <input id="proveedorBox" name="proveedorBox" type="text" />
+                        </div>
+
+                    </div>
+                    <div>
+                        <label class="" for="ComprobanteBox" id="lblcomprobante">Comprobante</label>
+
+
+                        <div>
+                            <input id="ComprobanteBox" name="ComprobanteBox" type="text" />
+                        </div>
+
+                    </div>
+                </div>
+                <div>
+                    <br>
+                    <br>
+                    <h4>Detalle</h4>
+
+                    <div>
+                        <label class="" for="codigoBox" id="lblcodPed">Codigo de Pedido</label>
+
+
+                        <div>
+                            <input id="codigoBox" name="codigoBox" type="text" style="height:50px" />
+                        </div>
+
+                    </div>
+                    <div>
+                        <label class="" for="codmatBox" id="lblcodmat">Codigo Materia Prima</label>
+
+
+                        <div>
+                            <input id="codmatBox" name="codmatBox" type="text"  />
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <label class="" for="nombrematBox" id="lblnombremat">Nombre Materia Prima</label>
+
+
+                        <div>
+                            <input id="nombrematBox" name="nombrematBox" type="text"  />
+                        </div>
+
+                    </div>
+                    <div>
+                        <label class="" for="cantidadBox" id="lblcantidad">Cantidad a Pedir</label>
+
+
+                        <div>
+                            <input id="cantidadBox" name="cantidadBox" type="text"  />
+                        </div>
+
+                    </div>
+                    <div>
+                        <label class="" for="estadoBox" id="lblestado">Estado</label>
+
+
+                        <div>
+                            <input id="estadoBox" name="estadoBox" type="text"  />
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+                <div>
+
+                    <br>
+                    <br>
+                    <button id="btnEliminar">Eliminar</button>
+                    <br>
+                    <br>
+                    <button id="btnCrear">Crear</button>
+
+
+
+
+                </div>
+
+
+            </fieldset>
+            <br>
+            <button id="btnSalida" onclick="location.href='Login.html'">Salir</button>
+
+    </div>
+</body>
+</html>
