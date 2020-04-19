@@ -7,15 +7,7 @@ require('dotenv/config');
 
 //import 
 
-const bodegasWeb = require('./WebForms/Bodegas');
-const clientesWeb = require('./WebForms/Clientes');
-const consecutivosWeb = require('./WebForms/Consecutivos');
-const eventosWeb = require('./WebForms/Eventos');
-const procesosWeb = require('./WebForms/Procesos');
-const productosWeb = require('./WebForms/Productos');
-const proveedoresWeb = require('./WebForms/Proveedores');
-const tiposmateriaprimasWeb = require('./WebForms/Tipos de Materia Prima');
-const usuariosWeb = require('./WebForms/Usuarios');
+
 
 const postsRoute = require('./routes/posts');
 const rolesRoute = require('./routes/roles');
