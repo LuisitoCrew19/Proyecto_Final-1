@@ -8,14 +8,30 @@
 </head>
 <body>
     <div class="wrapper">
+        <nav class="navbar navbar-expand-sm bg-light">
 
+            
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link 3</a>
+              </li>
+            </ul>
+          
+          </nav>
 
         <div class="sidebar-header">
             <h3>Tramesquirn S.A</h3>
 
         </div>
         <fieldset>
-            <form method="POST" action="/routes/bodegas.js">
+            
+            <form method="POST" action="/bodegas">
             
             <div>
                 <label class="" for="codBox" id="lblcod">Codigo</label>
@@ -64,7 +80,7 @@
             </div>
 
             <div>
-                <label class="" for="unidadBox" id="lblunidad">Unidad de Medidia</label>
+                <label class="" for="unidadBox" id="lblunidad">Unidad de Medida</label>
 
 
                 <div>

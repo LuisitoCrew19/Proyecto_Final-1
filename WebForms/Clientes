@@ -15,7 +15,7 @@
                 <h3>Tramesquirn S.A</h3>
             </div>
             <fieldset>
-
+                <form method="POST" action="/bodegas">
                 <h3>Informacion de Clientes</h3>
                 <div>
                     <label class="" for="codBox" id="lblcod">Codigo de Identificacion</label>\
@@ -109,7 +109,7 @@
                     </div>
 
                 </div>
-
+            </form>
                 <div>
 
                     <br>

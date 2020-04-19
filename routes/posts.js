@@ -12,6 +12,7 @@ router.get('/', async (req,res) =>{
     }
 
 });
+
   //submit posts
    router.post('/', async (req,res) => {
      const post = new Post({

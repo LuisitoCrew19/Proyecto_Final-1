@@ -13,7 +13,7 @@
 
         </div>
         <fieldset>
-
+            <form method="POST" action="/bodegas">
             <h3></h3>
             <div>
                 <label class="" for="tipconBox" id="tipcon">Tipo Consecutivo</label>
@@ -51,6 +51,7 @@
                 </div>
 
             </div>
+        </form>
             
             <div>
 
@@ -67,7 +68,7 @@
             </div>
 
 
-
+        </form>
         </fieldset>
         <button id="btnSalida" onclick="location.href='Login.html'">Salir</button>
     </div>
